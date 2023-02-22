@@ -5,8 +5,8 @@ There are a number of hobbyist steno keyboard designs out there, and my goal wit
 
 ## Bill of Materials
 - 1x Pro Micro or other compatible microcontroller (Elite-C, BIT-C, KB2040, etc.). The ones with USB-C connectors are sturdier but cost more than twice as much. If you use one of the basic ones with a micro USB connector, you might want to add a little hot glue near the connector to reinforce it.
-- 4x M2 standoffs
-- 8x M2 screws
+- 8x M2 standoffs
+- 16x M2 screws
 - 27x MX or Choc key switches; for steno I recommend switches with lighter springs, such as Choc Pink (25gf), Choc Pro Red (35gf) or Gateron Clear (35gf)
 - 6x 2u keycaps; particularly for MX switches, stabilizers are recommended but not required
 - 21 1u keycaps; flatter keycaps that make it easier to press two keys with one finger are generally better, such as MBK keycaps for Choc switches or F10 keycaps for MX switches.
