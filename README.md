@@ -33,7 +33,8 @@ You can find a .hex file of the default Peridot firmware in this repository. If 
 4. Plug the Pro Micro into your computer.
 5. Bridge the GND and RST pins with a metal object (or if it’s already soldered in place, press the reset switch).
 6. QMK Toolbox should automatically flash the firmware for you!
-If you do want to customize the firmware:
+
+If you want to customize the firmware:
 1. Copy the “peridot” folder from the firmware folder here into the “keyboards” folder of your QMK installation. You can modify the files in this folder as desired.
 2. Open a terminal window (for your OS if you’re using macOS or Linux, or QMK MSYS if you’re using windows).
 3. Navigate to the QMK folder (typically `cd qmk_firmware`).
