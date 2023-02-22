@@ -1,0 +1,2 @@
+- **default** is a basic steno layout that uses the GeminiPR protocol.
+- **keyboard** gives QWERTY output for using Plover (or Dotterel) in Keyboard mode, or for testing the keyboard.
