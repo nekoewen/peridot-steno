@@ -4,7 +4,7 @@ The Peridot is a simple mechanical keyboard for using the Plover open source sof
 There are a number of hobbyist steno keyboard designs out there, and my goal with the Peridot is to make one that’s easy to build (hence I used basic through-hole components throughout) and open source. How much it will cost will depend a lot on the specifics of the components you choose, but it’ll be vastly cheaper than a professional stenotype. Feel free to make, sell, remix, etc.; this is my attempt to give something back to the Plover community.
 
 ## Bill of Materials
-- 1x Pro Micro or other compatible microcontroller (Elite-C, BIT-C, KB2040, etc.). The ones with USB-C connectors are sturdier but cost more than twice as much. If you use one of the basic ones with a micro USB connector, you might want to add a little hot glue near the connector to reinforce it.
+- 1x Pro Micro or other compatible microcontroller (Elite-C, BIT-C, KB2040, etc.)
 - 8x M2 standoffs
 - 16x M2 screws
 - 27x MX or Choc key switches; for steno I recommend switches with lighter springs, such as Choc Pink (25gf), Choc Pro Red (35gf) or Gateron Clear (35gf)
