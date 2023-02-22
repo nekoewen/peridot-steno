@@ -4,7 +4,7 @@ The Peridot is a simple QMK-powered mechanical keyboard for using the Plover ope
 There are a number of hobbyist steno keyboard designs out there, and my goal with the Peridot is to make one that’s easy to build (hence I used basic through-hole components throughout) and open source. How much it will cost will depend a lot on the specifics of the components you choose, but it’ll be vastly cheaper than a professional stenotype. Feel free to make, sell, remix, etc.; this is my attempt to give something back to the Plover community.
 
 ## Bill of Materials
-- 1x Pro Micro or other compatible microcontroller (Elite-C, BIT-C, KB2040, etc.)
+- 1x Pro Micro or other compatible microcontroller (Elite-C, BIT-C, KB2040, etc.), with matching USB cable
 - 8x M2 standoffs
 - 16x M2 screws
 - 27x MX or Choc key switches; for steno I recommend switches with lighter springs, such as Choc Pink (25gf), Choc Pro Red (35gf) or Gateron Clear (35gf)
@@ -14,6 +14,13 @@ There are a number of hobbyist steno keyboard designs out there, and my goal wit
 - 27x 1N4148 through-hole diodes
 - 2-pin reset switch (optional)
 - WS2182 LED strip (optional)
+
+## Tools
+- Soldering iron with solder
+- Wire clippers
+- Wire stripper (if including an LED strip)
+- Screwdriver
+- Diode bending tool (optional; I use [this one](https://www.thingiverse.com/thing:4332520) BTW)
 
 ## Build Guide
 1. Begin with the diodes. Bend the leads, insert them through the holes (the cathode is marked with a black line and should go on the square pad, so that the line on the diode matches the one printed on the PCB). Solder each diode, then use clippers to remove the excess leads.
@@ -27,7 +34,7 @@ There are a number of hobbyist steno keyboard designs out there, and my goal wit
 
 ## Firmware
 You can find a .hex file of the default Peridot firmware in this repository. If you don’t have any need to customize the layout, you can just download this and flash it to your Pro Micro.
-1. Install QMK Toolbox if you haven’t already.
+1. Install [QMK Toolbox](https://github.com/qmk/qmk_toolbox) if you haven’t already.
 2. Open peridot.hex.
 3. Click the “Auto-Flash” checkbox.
 4. Plug the Pro Micro into your computer.
@@ -35,13 +42,13 @@ You can find a .hex file of the default Peridot firmware in this repository. If 
 6. QMK Toolbox should automatically flash the firmware for you!
 
 If you want to customize the firmware:
-1. Copy the “peridot” folder from the firmware folder here into the “keyboards” folder of your QMK installation. You can modify the files in this folder as desired.
+1. Copy the “peridot” folder from the firmware folder here into the “keyboards” folder of your [QMK installation](https://docs.qmk.fm/#/newbs_getting_started). You can modify the files in this folder as desired.
 2. Open a terminal window (for your OS if you’re using macOS or Linux, or [QMK MSYS](https://msys.qmk.fm/) if you’re using Windows).
 3. Navigate to the QMK folder (typically `cd qmk_firmware`).
 4. Type “`make peridot:default`” (or replace “`default`” with the name of your new keymap) and it should compile.
    - If you’re using an RP2040 controller board, you will need to use the Converters feature.
 5. Type "`make peridot:default:flash`" (or replace flash with “`dfu`”) to flash it.
 
-If you're using a KB2040 or similar controller, you'll need to use the [Converters](https://github.com/qmk/qmk_firmware/blob/4020674163fc80914059c4c9c3be5c0ae00bd150/docs/feature_converters.md) feature, so for example compiling and flashing for a KB2040 would go as follows:
+If you're using a KB2040 or similar controller, you'll need to use QMK's [Converters](https://github.com/qmk/qmk_firmware/blob/4020674163fc80914059c4c9c3be5c0ae00bd150/docs/feature_converters.md) feature, so for example compiling and flashing for a KB2040 would go as follows:
 
-`qmk flash -c -kb titan -km default -e CONVERT_TO=kb2040`
+`qmk flash -c -kb peridot -km default -e CONVERT_TO=kb2040`
