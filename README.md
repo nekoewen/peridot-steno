@@ -1,5 +1,5 @@
 # The Peridot
-The Peridot is a simple mechanical keyboard for using the Plover open source software for steno. If you’re not familiar, check out [the Open Steno Project](http://www.openstenoproject.org/) for links to the free software, learning resources, and other info to help you get started.
+The Peridot is a simple QMK-powered mechanical keyboard for using the Plover open source software for steno. If you’re not familiar, check out [the Open Steno Project](http://www.openstenoproject.org/) for links to the free software, learning resources, and other info to help you get started.
 
 There are a number of hobbyist steno keyboard designs out there, and my goal with the Peridot is to make one that’s easy to build (hence I used basic through-hole components throughout) and open source. How much it will cost will depend a lot on the specifics of the components you choose, but it’ll be vastly cheaper than a professional stenotype. Feel free to make, sell, remix, etc.; this is my attempt to give something back to the Plover community.
 
@@ -41,3 +41,7 @@ If you want to customize the firmware:
 4. Type “`make peridot:default`” (or replace “`default`” with the name of your new keymap) and it should compile.
    - If you’re using an RP2040 controller board, you will need to use the Converters feature.
 5. Type "`make peridot:default:flash`" (or replace flash with “`dfu`”) to flash it.
+
+If you're using a KB2040 or similar controller, you'll need to use the [Converters](https://github.com/qmk/qmk_firmware/blob/4020674163fc80914059c4c9c3be5c0ae00bd150/docs/feature_converters.md) feature, so for example compiling and flashing for a KB2040 would go as follows:
+
+`qmk flash -c -kb titan -km default -e CONVERT_TO=kb2040`
