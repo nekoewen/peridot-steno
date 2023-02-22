@@ -1,0 +1,26 @@
+Ref,Qnty,Value,Footprint,MPN,MANUFACTURER
+"D1, D3, D7, D8, D10, D11, D12, D16, D17, D18, D20, D22, D24, D25, D26, D27, D29, D30, D31, D32, D33, D34, D35, D37, D38, D41, D42, ",27,D,Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal,1N4148,onsemi
+"J1, ",1,LED VCC,TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm,DNP,DNP
+"J2, ",1,LED DAT,TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm,DNP,DNP
+"J3, ",1,LED GND,TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm,DNP,DNP
+"SW1, ",1,RESET,FOOTPRINTS:1825965-1,1825965-1,TE Connectivity
+"SW2, SW11, SW25, SW33, ",4,#,FOOTPRINTS:CherryMX_Choc_1u,,
+"SW4, SW39, ",2,S,FOOTPRINTS:CherryMX_Choc_1u,,
+"SW8, SW38, ",2,T,FOOTPRINTS:CherryMX_Choc_1u,,
+"SW9, ",1,K,FOOTPRINTS:CherryMX_Choc_1u,,
+"SW12, SW30, ",2,P,FOOTPRINTS:CherryMX_Choc_1u,,
+"SW13, ",1,W,FOOTPRINTS:CherryMX_Choc_1u,,
+"SW17, ",1,H,FOOTPRINTS:CherryMX_Choc_1u,,
+"SW18, SW27, ",2,R,FOOTPRINTS:CherryMX_Choc_1u,,
+"SW19, ",1,A,FOOTPRINTS:CherryMX_Choc_1u,,
+"SW21, SW28, ",2,*,FOOTPRINTS:CherryMX_Choc_1u,,
+"SW23, ",1,O,FOOTPRINTS:CherryMX_Choc_1u,,
+"SW26, ",1,F,FOOTPRINTS:CherryMX_Choc_1u,,
+"SW31, ",1,B,FOOTPRINTS:CherryMX_Choc_1u,,
+"SW32, ",1,E,FOOTPRINTS:CherryMX_Choc_1u,,
+"SW34, ",1,L,FOOTPRINTS:CherryMX_Choc_1u,,
+"SW35, ",1,G,FOOTPRINTS:CherryMX_Choc_1u,,
+"SW36, ",1,U,FOOTPRINTS:CherryMX_Choc_1u,,
+"SW42, ",1,D,FOOTPRINTS:CherryMX_Choc_1u,,
+"SW43, ",1,Z,FOOTPRINTS:CherryMX_Choc_1u,,
+"U1, ",1,ProMicro,FOOTPRINTS:ProMicro,Pro Micro,Sparkfun
