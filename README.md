@@ -46,7 +46,6 @@ If you want to customize the firmware:
 2. Open a terminal window (for your OS if you’re using macOS or Linux, or [QMK MSYS](https://msys.qmk.fm/) if you’re using Windows).
 3. Navigate to the QMK folder (typically `cd qmk_firmware`).
 4. Type “`make peridot:default`” (or replace “`default`” with the name of your new keymap) and it should compile.
-   - If you’re using an RP2040 controller board, you will need to use the Converters feature.
 5. Type "`make peridot:default:flash`" (or replace flash with “`dfu`”) to flash it.
 
 If you're using a KB2040 or similar controller, you'll need to use QMK's [Converters](https://github.com/qmk/qmk_firmware/blob/4020674163fc80914059c4c9c3be5c0ae00bd150/docs/feature_converters.md) feature, so for example compiling and flashing for a KB2040 would go as follows:
