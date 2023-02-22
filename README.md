@@ -10,17 +10,17 @@ There are a number of hobbyist steno keyboard designs out there, and my goal wit
 - 6x 2u keycaps; particularly for MX switches, stabilizers are recommended but not required
 - 21 1u keycaps; flatter keycaps that make it easier to press two keys with one finger are generally better, such as MBK keycaps for Choc switches or F10 keycaps for MX switches.
 - 4 or more adhesive rubber feet
-- 27 through-hole diodes
+- 27 1N4148 through-hole diodes
 - 2-pin reset switch (optional)
 - WS2182 LED strip (optional)
 
 ## Build Guide
-1. Begin with the diodes. Bend the leads, insert them through the holes (the cathode is marked with a black line and should go on the square pad). Solder each diode, then use clippers to remove the excess leads.
+1. Begin with the diodes. Bend the leads, insert them through the holes (the cathode is marked with a black line and should go on the square pad, so that the line on the diode matches the one printed on the PCB). Solder each diode, then use clippers to remove the excess leads.
 2. Take your Pro Micro and flash the firmware (see below). I recommend doing this before soldering it just in case you got a bad board.
 3. Solder the Pro Micro and its header pins to the underside of the board, with the Pro Micro’s components facing you. If you’re adding a reset switch, put it into the PCB and solder its pins.
 4. From here you should be able to test the keyboard’s functionality. If you plug it in, it should register as a Peridot keyboard, and you can use tweezers or a similar metal object to make contact on the switch pads to create the equivalent of keystrokes. Since this is a steno keyboard you will need to have Plover installed and running for your computer to actually register anything from it. If any of the keys don’t work, check to make sure you have the diodes soldered and facing the right direction, and also that the Pro Micro’s pins are all soldered in.
 5. Once you’re satisfied that the keyboard actually works, you can begin assembling it in earnest. If you’re using stabilizers, put them in place now. Then put the top plate in place, and start pushing switches in place, though the plate and into the PCB so that each switch’s two leads go through the corresponding holes in the PCB. I like to put switches in the corners, solder them in place, and then fill in the rest of the switches. Once you’ve soldered all of the switches, I recommend testing the keyboard again to be sure that you have in fact soldered all of them. Once that’s done you can go ahead and put on the keycaps.
-6. If you’re including an LED strip for pretty lights, use 3 wires to solder the pads on the PCB to the corresponding ones on the strip. Be sure the Dx lead is going to Dx on the board, as they won’t work if you get it backwards. If you plug it into your computer now, it should light up!
+6. If you’re including an LED strip for pretty lights, use 3 wires to solder the pads on the PCB to the corresponding ones on the strip. Be sure the DIn lead is going to LED DAT on the board, as they won’t work if you attach it to DOut on the LED strip. If you plug it into your computer now, it should light up!
 7. Use the standoffs and screws to attach the top plate to the bottom plate.
 8. Finally, put some adhesive rubber feet on the bottom. You’re done!
 
