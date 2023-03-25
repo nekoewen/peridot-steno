@@ -3,6 +3,8 @@ The Peridot is a simple QMK-powered mechanical keyboard for using the Plover ope
 
 There are a number of hobbyist steno keyboard designs out there, and my goal with the Peridot is to make one that’s easy to build (hence I used basic through-hole components throughout) and open source. How much it will cost will depend a lot on the specifics of the components you choose, but it’ll be vastly cheaper than a professional stenotype. Feel free to make, sell, remix, etc.; this is my attempt to give something back to the Plover community.
 
+![A photo of an assembled Peridot](https://github.com/nekoewen/peridot-steno/blob/74a3a563b949c9bfe39049e715f6430040a9c6b9/2023-03-24%2018.40.42.jpg)
+
 ## Bill of Materials
 - 1x Pro Micro or other compatible microcontroller (Elite-C, BIT-C, KB2040, etc.), with matching USB cable
 - 8x M2 standoffs
