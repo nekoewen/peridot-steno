@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name "FOOTPRINTS")(type "KiCad")(uri "${KIPRJMOD}/FOOTPRINTS.pretty")(options "")(descr ""))
-)
